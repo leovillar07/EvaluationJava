@@ -1,0 +1,23 @@
+### GET Listar Empresas
+GET /empresa/list HTTP/1.1
+Host: localhost:9550
+Authorization: Basic bGVvdnI6ODExOTU=
+
+### GET Listar las ultimas empresas
+GET /empresa/list/last/three HTTP/1.1
+Host: localhost:9550
+Authorization: Basic bGVvdnI6ODExOTU=
+
+### POST Registrar Empresa
+POST /empresa/save HTTP/1.1
+Host: localhost:9550
+Authorization: Basic bGVvdnI6ODExOTU=
+Content-Type: application/json
+Content-Length: 128
+
+{
+  "ruc": "10233212345",
+  "razonSocial": "Venta de Calamares",
+  "direccion": "Jr. Seoanes Cuadra 5",
+  "estado": true
+}
